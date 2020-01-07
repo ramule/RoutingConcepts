@@ -1,0 +1,8 @@
+<p>githubfollowers works!</p>
+
+<div class="media" *ngFor="let item of followers">
+   <h4 class="media-heading">
+       <!--Dealing with multiple route parameters-->
+       <a [routerLink]="['/followers',item.userId, item.id]">{{item.title}}</a>
+   </h4>
+</div>
